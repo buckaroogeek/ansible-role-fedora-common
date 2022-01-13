@@ -1,0 +1,8 @@
+---
+# defaults file for fedora_common
+#
+
+# Disable swap; default is false
+fc_disable_zram: false
+
+...

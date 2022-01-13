@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include fedora_common"
+      include_role:
+        name: "fedora_common"
+      vars:
+        fc_disable_zram: true

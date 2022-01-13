@@ -1,0 +1,19 @@
+---
+# tasks file for fedora_common
+#
+
+# sanity check that this role is used with fedora
+- name: Verity this is a fedora machine
+  assert:
+    that:
+      - ansible_facts['distribution'] | regex_search('fedora', ignorecase=True)
+    fail_msg: OS is not Fedora
+
+# if toggled, disable zram
+- name: Disable zram if required
+  dnf:
+    name: "{{ fc_zram_conf }}"
+    state: absent
+  when: fc_disable_zram
+
+...

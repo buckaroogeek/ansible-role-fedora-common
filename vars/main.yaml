@@ -1,0 +1,7 @@
+---
+# vars file for fedora_common
+
+# zram configuration rpm
+fc_zram_conf: zram-generator-defaults
+
+...
