@@ -1,4 +1,4 @@
-Role Name
+Fedora Common
 =========
 
 A collection of utility tasks that help set up and configure a fedora machine. Examples include a fail fast check for a fedora host and an option to disable zram swap.
