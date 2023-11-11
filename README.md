@@ -1,7 +1,7 @@
 Fedora Common
 =========
 
-A collection of utility tasks that help set up and configure a fedora machine. Examples include a fail fast check for a fedora host and an option to disable zram swap.
+A collection of common settings useful across multiple Fedora related playbooks and roles.
 
 Requirements
 ------------
@@ -15,12 +15,18 @@ End user configurable variables are listed below, along with default values (see
 
 | Variable   | Default Value | Notes |
 | ---------- | ------------- | ----- |
-| fc_disable_zram | false | Disable zram swap |
+|  |  |  |
+
+Variables set in vars/main.yaml shown here for reference. Not intended for modification at runtime.
+
+| Variable   | Value | Notes |
+| ---------- | ------------- | ----- |
+| fc_modularity | true if F38 or older | True if modularitly is available in DNF repositories. Modularity was removed in F39. |
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+None
 
 Example Playbook
 ----------------

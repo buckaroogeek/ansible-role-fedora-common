@@ -1,7 +1,7 @@
 ---
 # vars file for fedora_common
 
-# zram configuration rpm
-fc_zram_conf: zram-generator-defaults
+# fc_modularity - true for F38 and older
+fc_modularity: "{{ ansible_facts['distribution_major_version'] | int < 39 }}"
 
 ...
